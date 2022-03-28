@@ -2,13 +2,14 @@
 L = [1,0; .2, 1];
 b = [1; 1];
 
-z = forward_sub(L, b, 2);
+z = forward_sub(L, b);
 fprintf("The First Solution is %2.3f:\n", z);
 
 residual = (L*z) - b;
 fprintf("The First Residual is %2.3f:\n", residual)
 
-function z = forward_sub(L,b,n)
+function z = forward_sub(L,b)
+n = length(b);
 z = zeros(n, 1);
 
 for j = 1 : n - 1
