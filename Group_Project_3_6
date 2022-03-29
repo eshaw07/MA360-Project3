@@ -1,0 +1,4 @@
+% The famous PageRank algorithm gives signifigance to certain websites by seeing how often certain web pages get redirected by other web pages. %
+% It is used by assigning each node equal to whatever is being redirected to it. That can then in turn be equal to a matrix of a markov chain. %
+% That can then be derived to P' where P is equal to the markov chain and P' is now a list of 1/n nodes. %
+% This linear system can now be solved using code like forward or backward substitution to solve. %
